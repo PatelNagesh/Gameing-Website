@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/409/251/non_2x/pink-and-blue-gradient-background-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: aliceblue;
+}
+h1 {
+    color: rgb(186, 244, 247);
+    padding: 1%;
+    text-align: center;
+}
+h2 {
+    font-size: 60px;
+    text-align: center;
+}
+h3 {
+    font-size: 45px;
+    text-align: center;
+}
+nav{
+    background-color: rgb(23, 25, 49);
+    padding: 1.5%;
+    margin: 2%;
+    margin-bottom: 4%;
+    border: 5px;
+    border-radius: 30px 30px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    /* margin-right: 20cm; */
+}
+nav ul li{
+    display: inline;
+    padding: 10px;
+}
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: large;
+}
+.button-style {
+    background: #0ff;
+    background: linear-gradient(90deg, #11e9ec, #1de4e4 50%, #32ebee);
+    border: 5px solid #10c0c6;
+    border-radius: 1000px;
+    box-shadow: 0 1px #13d2d9;
+    padding: 9px 22px;
+    color: #fff;
+    display: inline-block;
+    font: normal bold 14px/1 "Roboto", sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px #c4c4c4;
+    text-decoration: none;
+    float: right;
+}
+.anime:hover{
+    color: #0ff;
+    transform: scale(9, 9);
+}
+.button-one{
+    padding: 10px 2px;
+    border-radius: 10%;
+    box-shadow: -3px 3px 3px #C4A31C;
+}
+.button-one::after{
+    box-shadow: rgb(23, 25, 49);
+    background-color: #C4A31C;
+    color: black;
+}
+.button-two{
+    padding: 10px;
+    border-radius: 10%;
+    box-shadow: -3px 3px 3px #3ec41c;
+}
+.button-three{
+    padding: 10px;
+    border-radius: 10%;
+    box-shadow: -3px 3px 3px #1e49c0;
+}
+.button-four {
+    padding: 10px;
+    border-radius: 10%;
+    box-shadow: -3px 3px 3px #b520c9;
+}
+/* .iDoHEu {
+    flex: 1 1 0%;
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+} */

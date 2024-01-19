@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Game Page</title>
+    <link rel="stylesheet" href="rating1.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <style>
+        body {
+            background-image: url(https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698192000&semt=ais);
+            background-position: center top;
+            background-size: 133%;
+            color: aliceblue;
+        }
+
+        h1 {
+            color: red;
+            padding: 1%;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgb(23, 25, 49);
+            padding: 1.5%;
+            margin: 2%;
+            margin-bottom: 4%;
+            border: 5px;
+            border-radius: 30px 30px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline;
+            margin-right: 20cm;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 10px;
+        }
+
+        nav ul li a {
+            color: aliceblue;
+            text-decoration: none;
+            font-size: large;
+        }
+
+        .button-style {
+            background: #0ff;
+            background: linear-gradient(90deg, #11e9ec, #1de4e4 50%, #32ebee);
+            border: 5px solid #10c0c6;
+            border-radius: 1000px;
+            box-shadow: 0 1px #13d2d9;
+            padding: 9px 22px;
+            color: #fff;
+            display: inline-block;
+            font: normal bold 14px/1 "Roboto", sans-serif;
+            text-align: center;
+            text-shadow: 1px 1px #c4c4c4;
+        }
+
+        .anime:hover {
+            color: #0ff;
+            transform: scale(9, 9);
+        }
+
+        .button-one {
+            padding: 10px 2px;
+            border-radius: 10%;
+            box-shadow: -3px 3px 3px #C4A31C;
+        }
+
+        .button-one::after {
+            box-shadow: rgb(23, 25, 49);
+            background-color: #C4A31C;
+            color: black;
+        }
+
+        .button-two {
+            padding: 10px;
+            border-radius: 10%;
+            box-shadow: -3px 3px 3px #3ec41c;
+        }
+
+        .button-three {
+            padding: 10px;
+            border-radius: 10%;
+            box-shadow: -3px 3px 3px #1e49c0;
+        }
+
+        img {
+            margin-top: 50px;
+            margin-left: 80px;
+            border-radius: 20%;
+        }
+
+        .image {
+            max-width: 250px;
+            max-height: 250px;
+        }
+
+        #pop_up {
+            perspective: 500px;
+        }
+
+        #pop_up img {
+            transition: 100ms;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        }
+
+        #pop_up img:hover {
+            transform: translate3d(10px, 0px, 20px);
+            box-shadow: 10px 15px 15px rgb(10, 150, 200);
+        }
+
+        .imgstyle1 {
+            width: 300px;
+            height: 200px;
+            align-items: center;
+            padding: 8%;
+        }
+
+        .align1 {
+            position: absolute;
+        }
+
+        .rating {
+            display: inline-block;
+
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .krina {
+            padding: 15px;
+            text-align: center;
+            border-radius: 10%;
+            margin-left: 70px;
+            font-size: 22px;
+        }
+
+        .fotpage {
+            transition: none;
+            color: #fff;
+            text-decoration: none;
+            font-size: 25px;
+            padding-right: 15px;
+        }
+        div img {
+            width: 250px;
+            height: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.getElementById("hi").innerHTML =`<div class="rating" class="align1">
+            <img src="https://www.primarygames.com/arcade/action/ninjaaction/logo200.png" alt="छवि"
+                class="image" class="imgstyle1">
+            <div class="krina" style="background-color:  rgb(244, 153, 198);"><a href="display2.html"
+                    style="padding-right: 25%; color: #bb260f; text-decoration: none;"> rating</a> <a
+                    href="https://www.mathplayground.com/logic_ninja_action.html"
+                    style="color: #bb260f; text-decoration: none;">play</a>
+                </div>
+        </div>`;
+    </script>
+    <header>
+        <img src="https://img.freepik.com/free-vector/detailed-esports-gaming-logo_79603-1792.jpg?size=338&ext=jpg&ga=GA1.1.386372595.1698278400&semt=ais"
+            alt="Game arena" style="width: 95px;">
+        <h1><big><b>WELCOME TO ACTION GAMES</b></big></h1>
+        <nav>
+            <ul>
+                <li><a href="homepage2.html" class="button-one anime">Home</a></li>
+                <li><a href="quizpage.html" class="button-two anime">Quiz</a></li>
+                <li><a href="Action2.html" class="button-three anime">Action</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="rating3.php" method="post">
+            <div id="pop_up">
+
+                <div class="rating" class="align1">
+                    <img src="https://global.discourse-cdn.com/standard17/uploads/threejs/optimized/3X/2/f/2feb30f47257cd5419318ee0aa21a09957223378_2_690x414.jpeg" alt="छवि" class="image" class="imgstyle1">
+                    <div class="krina" style="background-color:  rgb(244, 153, 198);">
+                        <a href="display2.html" style="padding-right: 25%; color: #bb260f; text-decoration: none;"> rating</a> 
+                        <a href="game/newgame/annihilate-dev/index.html" style="color: #bb260f; text-decoration: none;">play</a></div>
+                    </div>
+                
+                <div class="rating" class="align1">
+                    <img src="https://www.marketjs.com/shell/article/retro-html5-games/shoot-the-asteroids.jpg" alt="छवि" class="image" class="imgstyle1">
+                    <div class="krina" style="background-color:  rgb(54, 78, 55);">
+                        <a href="display2.html"style="padding-right: 25%; color: #0fbb1d; text-decoration: none;">rating</a>
+                        <a href="game/newgame/Asteroid-js-master/index.html"style="color: #0fbb1d; text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="http://localhost:3000/htdocs/game/newgame/annihilate-dev/index.html">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple3/v4/cb/61/5e/cb615e98-4f3a-0ac8-6c09-b2ee31200f6c/pr_source.jpg/750x750bb.jpeg" alt="छवि" class="image" class="imgstyle1" id="game3"></a>
+                    <div class="krina" style="background-color:  rgb(243, 182, 85);">
+                        <a href="display2.html"style="padding-right: 25%; text-decoration: none;">rating</a> 
+                        <a href="game/newgame/AstroMath-main/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="quiz.html">
+                    <img src="https://m.media-amazon.com/images/I/71e05T6M4PL.png"alt="छवि" class="image" class="imgstyle1" id="game3"></a>
+                    <div class="krina" style="background-color:  rgb(243, 182, 85);">
+                        <a href="display2.html"style="padding-right: 25%; text-decoration: none;">rating</a> 
+                        <a href="game/newgame/Black-Hole-master/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="">
+                    <img src="https://png.pngtree.com/background/20230513/original/pngtree-halloween-pixel-game-picture-image_2511262.jpg" alt="छवि" class="image" class="imgstyle1"></a>
+                    <div class="krina" style="background-color:  rgb(107, 127, 245);">
+                        <a href="display2.html" style="padding-right: 25%; text-decoration: none;">rating</a>
+                        <a href="game/newgame/Captain-of-Guerilla-master/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="">
+                    <img src="https://lh3.googleusercontent.com/vCXlKRTRhu8dKRxGkN66nqzhoToDRbxznDp7SGhHAXKeWRQeRkx6NgHXyetEXTqZ683yNf9LINI94XBe1eDgDMeQ=w640-h400-e365-rj-sc0x00ffffff" alt="छवि" class="image" class="imgstyle1"></a>
+                    <div class="krina" style="background-color:  rgb(107, 127, 245);">
+                        <a href="display2.html" style="padding-right: 25%; text-decoration: none;">rating</a>
+                        <a href="game/newgame/easiest-js-game-main/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4fVcR9ghN1cKsXvl6xMcLy8HG2H3nFgRzlw&usqp=CAU" alt="छवि" class="image" class="imgstyle1"></a>
+                    <div class="krina" style="background-color:  rgb(107, 127, 245);">
+                        <a href="display2.html" style="padding-right: 25%; text-decoration: none;">rating</a>
+                        <a href="game/newgame/Fifteen-Puzzle-main/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="">
+                    <img src="https://wallpapercave.com/wp/wp6956947.png" alt="छवि" class="image" class="imgstyle1"></a>
+                    <div class="krina" style="background-color:  rgb(107, 127, 245);">
+                        <a href="display2.html" style="padding-right: 25%; text-decoration: none;">rating</a>
+                        <a href="game/newgame/flappy-vinny-main/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="">
+                    <img src="https://i.imgur.com/78L31hj.png" alt="छवि" class="image" class="imgstyle1"></a>
+                    <div class="krina" style="background-color:  rgb(107, 127, 245);">
+                        <a href="display2.html" style="padding-right: 25%; text-decoration: none;">rating</a>
+                        <a href="game/newgame/flat-candies-master/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="">
+                    <img src="https://webdevtrick.com/wp-content/uploads/tic-tac-toe-javascript.jpg" alt="छवि" class="image" class="imgstyle1"></a>
+                    <div class="krina" style="background-color:  rgb(107, 127, 245);">
+                        <a href="display2.html" style="padding-right: 25%; text-decoration: none;">rating</a>
+                        <a href="game/newgame/JavaScript-Tic-Tac-Toe-Project-master/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+
+                <div class="rating" class="align1">
+                    <a href="">
+                    <img src="https://img.itch.zone/aW1hZ2UvMjUwNzkwLzExOTg2ODAucG5n/315x250%23c/ZKBoj5.png" alt="छवि" class="image" class="imgstyle1"></a>
+                    <div class="krina" style="background-color:  rgb(107, 127, 245);">
+                        <a href="display2.html" style="padding-right: 25%; text-decoration: none;">rating</a>
+                        <a href="game/newgame/Ludum-Dare-41-master/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl2dow0iN8RXjMWJ3OPxzVsgzOrYqCX38pFg&usqp=CAU" alt="छवि" class="image" class="imgstyle1"></a>
+                    <div class="krina" style="background-color:  rgb(107, 127, 245);">
+                        <a href="display2.html" style="padding-right: 25%; text-decoration: none;">rating</a>
+                        <a href="game/newgame/RoadFighter-master/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="">
+                    <img src="https://w0.peakpx.com/wallpaper/843/88/HD-wallpaper-sea-war-game-war-ship-sea.jpg" alt="छवि" class="image" class="imgstyle1"></a>
+                    <div class="krina" style="background-color:  rgb(107, 127, 245);">
+                        <a href="display2.html" style="padding-right: 25%; text-decoration: none;">rating</a>
+                        <a href="game/newgame/sea_war-master/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsUB1oqSM1bBbHWY2Qk1duUCgH_2DbiQ4T0w&usqp=CAU" alt="छवि" class="image" class="imgstyle1"></a>
+                    <div class="krina" style="background-color:  rgb(107, 127, 245);">
+                        <a href="display2.html" style="padding-right: 25%; text-decoration: none;">rating</a>
+                        <a href="game/newgame/snake-master/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="">
+                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Kvjyw99r--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8b4kt6o06cedssslhx57.png" alt="छवि" class="image" class="imgstyle1"></a>
+                    <div class="krina" style="background-color:  rgb(107, 127, 245);">
+                        <a href="display2.html" style="padding-right: 25%; text-decoration: none;">rating</a>
+                        <a href="game/newgame/snake.js-master/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="">
+                    <img src="https://store-images.s-microsoft.com/image/apps.49885.14325729045794215.44c449b4-3aa0-405a-b598-394166f67f72.ed5abef9-16d1-4b9d-b357-0ca4a8bdbab7?mode=scale&q=90&h=1080&w=1920" alt="छवि" class="image" class="imgstyle1"></a>
+                    <div class="krina" style="background-color:  rgb(107, 127, 245);">
+                        <a href="display2.html" style="padding-right: 25%; text-decoration: none;">rating</a>
+                        <a href="game/newgame/Straighten-Rifle-main/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+                <div class="rating" class="align1">
+                    <a href="">
+                    <img src="https://i.pinimg.com/originals/6e/d2/bb/6ed2bbe78d8c0bc396e2081b8eabdf46.jpg" alt="छवि" class="image" class="imgstyle1"></a>
+                    <div class="krina" style="background-color:  rgb(107, 127, 245);">
+                        <a href="display2.html" style="padding-right: 25%; text-decoration: none;">rating</a>
+                        <a href="game/newgame/towers_game2d-master/index.html" style="text-decoration: none;">play</a></div>
+                </div>
+
+            </div>
+        </form>
+    </main>
+    <center>
+        <footer>
+            <p>let the world play</p>
+            <br>
+            <a class="fotpage anime" href="http://localhost:3000/htdocs/game/krina/About1.html">About</a>
+            <a class="fotpage anime" href="">Developers</a>
+            <a class="fotpage anime" href="">contact</a>
+        </footer>
+    </center>
+</body>
+
+</html>
+

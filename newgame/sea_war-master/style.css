@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(224, 224, 224);
+  position: relative;
+  font-family: "Bangers", cursive;
+}
+
+canvas {
+  border: solid 3px white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(117, 117, 117);
+  /* width: 100%; */
+  /* aspect-ratio: 16/9; */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#layer1,
+#layer2,
+#layer3,
+#layer4,
+#player,
+#angler1,
+#angler2,
+#lucky,
+#projectile,
+#gears,
+#hiveWhale,
+#hiveWhaleDrone,
+#fireExplosion,
+#smokeExplosion {
+  display: none;
+}

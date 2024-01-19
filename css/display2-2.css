@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap'); 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+    background: #f1f1f1;
+}
+.showdispaly{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: black;
+    width: 20%;
+    border: #f9df4a;
+}
+.box{
+    position: relative;
+    width: 90%;
+    height: 390px;
+    background-color: rgb(32, 142, 146);
+    border-radius: 50px 50px;
+    overflow: hidden;
+    position: relative;
+}
+.box1{
+    margin-left: 10px;
+    padding-top: 15px;
+    position: relative;
+    width: 45%;
+    height: 300px;
+    border-radius: 50px 50px;
+    overflow: hidden;
+    position: absolute;
+}
+.side {
+    /* background-color: aquamarine; */
+    padding-left: 65%;
+    padding-top: 10%;
+    border-radius: 50%;
+}
+input[type="submit"]{
+    font-size: 28px;
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 90px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 50%;
+}
+input[type="submit"]:active
+{
+    background: linear-gradient(90deg, #45f3ff, #d9138a);
+    opacity: 0.8;
+}
+h1 {
+    font-family: 'Roboto Slab', serif;
+    margin: 50px 20px 40px;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    color: #999;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    color: #999;
+}
+.rating1 {
+    width: 308px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+}
+.rating label {
+    float: right; /* it float right is conten the how many star we selectd to chose */
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.rating label:not(:first-of-type) {
+    padding-right: 2px;
+}
+.rating label:before {
+    content: "\2605";
+    font-size: 42px;
+    color: #ccc;
+    line-height: 1;
+}
+.rating input {
+    display: none;
+}
+.rating input:checked ~ label:before, .rating:not(:checked) > label:hover:before { /* .rating:not(:checked) > label:hover ~ label:before it perform the privies star selection from selectd star */
+    color: #f9df4a;
+}
+.rating:not(:checked) > label:hover ~ label:before {
+    color: #f9df4a;
+}
+.align1 {
+    position: absolute;
+}

@@ -1,0 +1,95 @@
+.rating {
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    padding-bottom: 55px;
+    /* border: 1px solid #ccc; */
+    /* background: #f9f9f9; */
+}
+.rating label {
+    float: right; /* it float right is conten the how many star we selectd to chose */
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.rating label:not(:first-of-type) {
+    padding-right: 2px;
+}
+.rating label:before {
+    content: "\2605";
+    font-size: 42px;
+    color: #ccc;
+    line-height: 1;
+}
+.rating input {
+    display: none;
+}
+.rating input:checked ~ label:before, .rating:not(:checked) > label:hover:before { /* .rating:not(:checked) > label:hover ~ label:before it perform the privies star selection from selectd star */
+    color: #f9df4a;
+}
+.rating:not(:checked) > label:hover ~ label:before {
+    color: #f9df4a;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    margin: 20px 20px 10px;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    color: #999;
+    position: absolute;
+    padding-left: 33%;
+}
+.box{
+    background-color: rgb(68, 232, 232);
+    width: 90%;
+    height: 490px;
+    margin-left: 5%;
+    margin-top: 40px;
+    border-radius: 50px 50px;
+    position: relative;
+}
+.box1{
+    margin-left: 10px;
+    padding-top: 2%;
+    width: 40%;
+    height: 300px;
+    border-radius: 50px 50px;
+    overflow: hidden;
+    position: fixed;
+}
+.box2{
+    padding-top: 8%;
+}
+.posi2{
+    padding-left: 50%;
+    margin-top: 13px;
+    width: 40%;
+    position: absolute;
+    /* border: 10px solid#ccc; */
+}
+.posi1{
+    padding: 20px 20px;
+    /* border: 10px solid#b88f8f; */
+    
+}
+input[type="submit"]{
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 90px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    margin-top: 14%;
+    margin-left: -20%;
+}
+input[type="submit"]:active
+{
+    background: linear-gradient(90deg, #45f3ff, #d9138a);
+    opacity: 0.8;
+}

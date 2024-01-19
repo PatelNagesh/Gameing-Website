@@ -1,0 +1,772 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+canvas{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+img{
+    pointer-events: none;
+}
+body * {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none; 
+       -khtml-user-select: none; 
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; 
+}
+#menuBg{
+    background: #1F1F1F;
+    position: sticky;
+    display: grid;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+}
+#menu{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+}
+#menuHeader{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 40% 30%;
+}
+.menuBtns{
+    background: transparent;
+    width: 45%;
+    height: 35%;
+    border: 4px solid #FF5900;
+    color: #ff5900;
+    place-self: center;
+    font-size: 36px;
+    cursor: pointer;
+}
+.gameName{
+    place-self: center;
+    font-size: 54px !important;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff5900 !important;
+}
+#menu > *{
+    font-size: 42px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .4s;
+    color: #ff5900;
+}
+#menuBody{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 40% 30%;
+}
+#leftBodyBlock{
+    display: grid;
+    width: 45%;
+    height: 90%;
+    justify-self: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 65% 35%;
+}
+#centrBodyBlock{
+    background: #191919;
+    display: grid;
+    width: 80%;
+    height: 90%;
+    justify-self: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+}
+#rightBodyBlock{
+    display: grid;
+    width: 45%;
+    height: 90%;
+    justify-self: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+}
+#weaponsChoose{
+    display: flex;
+    width: 100%;
+    justify-self: center;
+    flex-wrap: wrap;
+}
+#iconOfBot > img{
+    width: 100%;
+}
+#nickNameBlock{
+    background: #191919;
+    display: grid;
+    align-self: flex-end;
+    height: 70%;
+    width: 100%;
+    grid-template-rows: 40% 60%;
+}
+#nickNameBlock > label{
+    width: 100%;
+    height: 100%;
+    font-size: 32px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+#nickNameBlock > input{
+    width: 90%;
+    height: 50%;
+    margin: 15% 4%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1F1F1F;
+    border: none;
+    color: #FF5900;
+    font-size: 28px;
+    font-weight: bold;
+    outline: none;
+}
+#enemyShowBlock{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 40% 30%;
+    color: #0A0A0A;
+}
+#enemyShowBlock > img{
+    height: 70%;
+}
+#enemyShowBlock > *{
+    place-self: center;
+}
+#onlineBlock{
+    border-top: 10px solid #1F1F1F;
+    width: 90%;
+    height: 100%;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#onlineBlock > input{
+    background: #1F1F1F;
+    border: none;
+    width: 70%;
+    height: 20%;
+    font-weight: bold;
+    color: #0C0C0C;
+    font-size: 24px;
+    outline: none;
+}
+#enemyCode::placeholder, #yourCode::placeholder{
+    text-align: center;
+    color: #0C0C0C;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#onlineBlock > button{
+    width: 20%;
+    height: 20%;
+    margin-left: 9%;
+    background: transparent;
+    border: 4px solid #FF5900;
+    color: #ff5900;
+    place-self: center;
+    font-weight: normal;
+    font-size: 28px;
+    cursor: pointer;
+}
+#botDifficultSwitch{
+    display: flex;
+    width: 100%;
+    justify-self: center;
+    flex-wrap: wrap;
+}
+#weaponsChoose > button, #botDifficultSwitch > button {
+    background: transparent;
+    border: none;
+    color: rgb(255, 89, 0);
+    width: 100%;
+    height: 20%;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+    transition: .5s;
+}
+#weaponsChoose > label, #botDifficultSwitch > label {
+    background: #191919;
+    border: none;
+    color: #FF5900;
+    width: 100%;
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+#gameMenu{
+    background: #1F1F1F;
+    position: sticky;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    grid-template-rows: 20% 45% 20% 15%;
+}
+#gameMenu > img{
+    height: 80%;
+}
+#gameMenu > label{
+    font-size: 28px;
+    color: #0C0C0C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#gameMenu > *{
+    place-self: center;
+}
+#gameMenu > div{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#gameMenu > div > button{
+    width: 30%;
+    height: 35%;
+    background: transparent;
+    border: 4px solid #FF5900;
+    color: #ff5900;
+    place-self: center;
+    font-weight: normal;
+    font-size: 32px;
+    cursor: pointer;
+}
+#advancedInfoBlock{
+    position: absolute;
+    display: none;
+    grid-template-columns: 30% 70%;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 20vh;
+    z-index: 2;
+}
+#advancedInfoBlock > *:nth-child(odd){
+    justify-content: end;
+}
+#advancedInfoBlock > *:nth-child(even){
+    justify-content: start;
+}
+#advancedInfoBlock > *{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+#sensBlock{
+    justify-self: end;
+    height: 25%;
+    width: 100%;
+    display: grid;
+}
+#sensBlock *{
+    font-size: 24px;
+}
+#sensBlock > label{
+    text-align: center;
+}
+#sensInp{
+    width: 20%;
+    place-self: center;
+    text-align: center;
+    border: none;
+}
+#settingsBlock{
+    background: #1F1F1F;
+    position: sticky;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 100%;
+}
+#settingsHeaderBlock{
+    border-bottom: 10px solid #191919;
+    width: 90%;
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#settingsBlockLbl{
+    color: #ff5900;
+    font-weight: bold;
+    font-size: 46px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2%;
+}
+#onMenu{
+    background: transparent;
+    width: 15%;
+    height: 35%;
+    border: 4px solid #FF5900;
+    color: #ff5900;
+    font-size: 36px;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+#settingsBodyBlock{
+    display: grid;
+    width: 90%;
+    justify-self: center;
+    grid-auto-rows: max-content;
+    grid-gap: 10%;
+    overflow-y: scroll;
+    scroll-behavior: smooth !important;
+}
+.settingsBlocks{
+    width: 100%;
+    justify-self: center;
+}
+.settingsSliderBlocks > label{
+    display: flex;
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0C0C0C;
+}
+.settingsKeyAssignmentBlocks{
+    margin-top: 2%;
+    display: flex;
+}
+.settingsKeyAssignmentBlocks  > button{
+    background: transparent;
+    width: 10%;
+    padding: 0.5% 0;
+    border: 4px solid #FF5900;
+    color: #ff5900;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 2%;
+    outline: none;
+}
+.settingsKeyAssignmentBlocks  > label{
+    display: flex;
+    width: 50%;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0C0C0C;
+    padding-top: 0.5%;
+    text-align: center;
+    margin-left: 5%;
+}
+.headerSettingBlocks > label{
+    color: #ff5900;
+    font-weight: bold;
+    font-size: 46px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2%;
+}
+.headerSettingBlocks{
+    width: 100%;
+    border-bottom: 10px solid #191919;
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#settingsBodyBlock::-webkit-scrollbar {
+    display: none;
+  }
+.settingsSliderBlocks > input[type=range]{
+    width: 45%;
+    background: #FF5900;
+}
+.settingsSliderBlocks > input[type=range]::-webkit-slider-runnable-track{
+    background: #191919;
+}
+.settingsSliderBlocks > input[type=range]::-ms-track{
+    background: #FF5900;
+}
+.settingsSliderBlocks > input[type=range]::-ms-track{
+    background: #FF5900;
+}
+.settingsSliderBlocks > input[type=number]{
+    width: 10%;
+    height: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FF5900;
+    text-align: center;
+    background: transparent;
+    border: 4px solid #FF5900;
+    margin-left: 5%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    outline: none;
+}
+.settingsSliderBlocks{
+    margin-top: 3%;
+}
+input[type="range"] { 
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    width: 45%;
+    cursor: pointer;
+    border-radius: 0;
+}
+::-webkit-slider-runnable-track {
+    background: #191919;
+}
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0px; /* 1 */
+    height: 40px;
+    background: #FF5900;
+    box-shadow: -50vw 0 0 50vw #FF5900; /* 2 */
+    border: 0px solid #FF5900; /* 1 */
+}
+
+::-moz-range-track {
+    height: 40px;
+    background: #FF5900;
+}
+
+::-moz-range-thumb {
+    background: #FF5900;
+    height: 40px;
+    width: 0px;
+    border: 3px solid #FF5900;
+    border-radius: 0 !important;
+    box-shadow: -50vw 0 0 50vw #FF5900;
+    box-sizing: border-box;
+}
+
+::-ms-fill-lower { 
+    background: #FF5900;
+}
+
+::-ms-thumb { 
+    background: #FF5900;
+    border: 0px solid #FF5900;
+    height: 40px;
+    width: 0px;
+    box-sizing: border-box;
+}
+
+::-ms-ticks-after { 
+    display: none; 
+}
+
+::-ms-ticks-before { 
+    display: none; 
+}
+
+::-ms-track { 
+    background: #FF5900;
+    color: transparent;
+    height: 40px;
+    border: none;
+}
+
+::-ms-tooltip { 
+    display: none;
+}
+#crosshair{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 50%;
+    top: 50%;
+    /* transform: translate(-25%, -55%); */
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: 40vh;
+    color: aqua;
+    opacity: 1;
+}
+#settingsCrosshair{
+    width: 30vw;
+    height: 40vh;
+    position: relative;
+    margin-left: 65%;
+    margin-top: -40%;
+    border: 4px solid #FF5900;
+}
+#loader{
+    background-color: #1F1F1F;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999999;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 40% 30%;
+}
+#loader > *{
+    width: 90%;
+    justify-self: center;
+}
+#loader > div:nth-child(1){
+    border-bottom: 10px solid #191919;
+}
+#loader > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#loader > div:nth-child(2) > img{
+    height: 80%;
+}
+#loader > div:nth-child(2) > label{
+    height: 80%;
+    margin-left: 5%;
+}
+#loader > div:nth-child(3){
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+}
+#loader > div:nth-child(3) > img{
+    justify-self: center;
+    align-self: flex-start;
+}
+#loader > div:nth-child(3) > label{
+    justify-self: center;
+}
+#loader > div > label{
+    color: #0C0C0C;
+    font-weight: bold;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+}
+#awpScope{
+    display: none;
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border-radius: 50%;
+    border: 100vh solid black;
+}
+#verticalLine{
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+}
+#horizontalLine{
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 100vw;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+}
+#ammoNumber{
+    position: absolute;
+    display: flex;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    height: 60px;
+    width: 200px;
+    z-index: 3;
+    background: #1F1F1F;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+#ammoNumber > *{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ff5900;
+}
+#ammoSlash{
+    width: 40px;
+    text-align: center;
+}
+#nextRoundTransitionBlock{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: 0;
+    z-index: 10;
+}
+#healthPointsBlock{
+    position: absolute;
+    display: grid;
+    top: 100%;
+    left: 0;
+    transform: translate(0, -100%);
+    height: 60px;
+    width: 400px;
+    z-index: 3;
+    background: #1F1F1F;
+    grid-template-rows: 100%;
+    grid-template-columns: 100px 60px 240px;
+    border-radius: 4px;
+}
+#healthPointsBlock > *{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #FF5900;
+    place-self: center;
+}
+#healthIcon{
+    place-self: center;
+}
+#healthBar{
+    background-color: #FF5900;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    justify-self: flex-start;
+    border-radius: 4px;
+    transform: translate(0, -100%);
+}
+#healthBarBlock{
+    width: 80%;
+    height: 40%;
+}
+#healthPointsLbl{
+    align-self: center;
+    justify-self: flex-start;
+}
+#underHealthBar{
+    height: 100%;
+    width: 100%;
+    background: #191919;
+}
+#scoreBoard{
+    position: absolute;
+    display: grid;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    height: 60px;
+    width: 30%;
+    z-index: 3;
+    background: #1F1F1F;
+    grid-template-rows: 100%;
+    border-radius: 4px;
+    grid-template-rows: 100%;
+    grid-template-columns: 35% 10% 10% 10% 35%;
+}
+#scoreBoard > *{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #FF5900;
+    place-self: center;
+    text-align: center;
+}
+#nextRoundAnnounceBlock{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15vw;
+    height: 60px;
+    border-radius: 4px;
+    z-index: 3;
+    background: #191919;
+    margin-left: -7.5vw;
+    opacity: 0;
+}
+#nextRoundAnnounceBlock > *{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #FF5900;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#hitEventShow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: inset 5vh 5vh 5vh, inset -5vh -5vh 5vh;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+}
+.hitEventShow{
+    animation: whiteAndBlackout .5s;
+}
+.nextRoundBlackout{
+    animation: nextRoundBlackout 3s;
+}
+.nextRoundAnnounce{
+    animation: nextRoundAnnounce 5s;
+    opacity: 1 !important;
+}
+@keyframes nextRoundBlackout { 0% { opacity: 0; } 75% { opacity: 1; } 100% { opacity: 0; } }
+
+@keyframes whiteAndBlackout { 0% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 0; } }
+
+@keyframes nextRoundAnnounce { 0% { transform: translateY(-100%); } 30% { transform: translateY(0%); } 70% { transform: translateY(0%); } 100% { transform: translateY(-100%); } }

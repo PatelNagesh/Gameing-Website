@@ -1,0 +1,422 @@
+<html>
+
+<head>
+    <title>ABOUTUS PAGE</title>
+    <style>
+        body,
+        h1,
+        p {
+            margin: 0;
+        }
+
+        body {
+            background-color: slategray;
+        }
+
+        img {
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+        header {
+            background-color: #959595;
+            color: #fff;
+            padding: 20px;
+        }
+
+        header h1 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 45px;
+            color: #333;
+        }
+
+        header p {
+            text-align: center;
+            color: #333;
+            margin-top: 10px;
+            padding-bottom: 35px;
+        }
+
+        .discription {
+            background-color: #959595;
+            max-width: 50%;
+            box-shadow: 0 8px 16px rgb(31, 31, 31);
+            border-radius: 8px;
+            margin-left: 350px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .discription p,
+        h2,
+        h3 {
+            margin: 10px, 20px;
+            padding: 20px;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;
+            padding-bottom: 350px;
+        }
+
+        .container {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .developer {
+            max-width: 250px;
+            opacity: 0.8;
+            background-color: rgb(0, 0, 60);
+            margin: 25px;
+            padding: 10px;
+            padding-bottom: 15px;
+            border-radius: 15%;
+        }
+
+        #pop_up {
+            text-align: center;
+            perspective: 500px;
+        }
+
+        #popup div.developer {
+            transition: 100ms;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        }
+
+        #popup div.developer:hover {
+            opacity: 1;
+            background-color: white;
+            transform: translate3d(5px, 10px, 5px);
+            box-shadow: 0 15px 15px rgb(31, 31, 31);
+            border-top-left-radius: 15%;
+            border-top-right-radius: 15%;
+            border-bottom-left-radius: 0%;
+            border-bottom-right-radius: 0%;
+        }
+
+        .container img {
+            height: 130px;
+            border-radius: 50%;
+            border-color: orange;
+            border-width: 3px;
+            border-style: groove;
+            margin-top: 39px;
+            margin-left: 39px;
+        }
+
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .overlay {
+            margin-top: 4px;
+            position: relative;
+            bottom: 0;
+            left: 10;
+            right: 0;
+            height: 25%;
+            width: 90%;
+            opacity: 0;
+            transition: .5s ease;
+            font-weight: bold;
+        }
+
+        .developer:hover .overlay {
+            opacity: 0.8;
+        }
+
+        .text {
+            color: 3px solid black;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .ppup {
+            margin-top: 15px;
+            right: 0;
+            left: 0;
+            text-align: center;
+            display: none;
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            opacity: 0;
+            box-shadow: 0 8px 16px rgb(31, 31, 31);
+        }
+
+        .developer:hover .ppup {
+            display: block;
+            opacity: 1;
+        }
+
+        .ppupdev {
+            margin-top: 10px;
+            right: 0;
+            left: 0;
+            text-align: center;
+            display: none;
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            opacity: 0;
+            border-top-left-radius: 0%;
+            border-top-right-radius: 0%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: 0 8px 16px rgb(31, 31, 31);
+        }
+
+        .ppup:hover .ppupdev {
+            display: block;
+            opacity: 1;
+            background-color: white;
+        }
+
+        .ppupdev p {
+            margin-top: 20px;
+            font-size: 21px;
+            height: 30px;
+            background-color: orange;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .ppupdev a img {
+            border-radius: 0%;
+            border: none;
+            height: 40px;
+
+            flex-direction: row;
+        }
+
+        .ppupdev .contactimg img {
+            margin: 10px 5px;
+            flex-direction: row;
+
+        }
+
+        footer {
+            text-align: center;
+            padding-bottom: 50px;
+            background-color: lightseagreen;
+        }
+
+        .foot {
+            display: flex;
+            align-items: center;
+        }
+        .foot img {
+            margin-left: 625px;
+            height: 80px;
+        }
+
+        footer a {
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://p1.hiclipart.com/preview/982/757/135/logo-game-logo-eu-sports-team-sports-league-aqua-fish-png-clipart.jpg"
+            alt="Game Arena" style="height: 50px;">
+        <h1>ABOUT-US</h1>
+        <p>We are passionate game developers!</p>
+    </header>
+    <div class="discription">
+        <h2>ABOUT GAME ARENA</h2>
+        <h3>Free Online Games</h3>
+        <p>
+            Game Arena has the best free online games selection and offers the most fun experience to play alone or with
+            friends. We offer instant play to all our games without downloads, login, popups or other distractions. Our
+            games are
+            playable on desktop, tablet and mobile so you can enjoy them at home or on the road. Every month over 50
+            million gamers from all over the world play their favorite games on Game Arena.
+        </p><br>
+        <h2>OUR GAME SELECTION</h2>
+        <p>
+            Game developers release fun New Games on our platform on a daily basis. Our most Popular Games include hits
+            like <a href="">Subway Surfers</a>, <a href="">Temple Run 2</a>, <a href="">Stickman Hook</a> and <a
+                href="">Rodeo Stampede</a>. These games are only playable on Game Arena. We also have online classics
+            like
+            <a href="">Moto X3M</a>, <a href="">Venge.io</a>, <a href="">Dino Game</a>, <a href="">Smash Karts</a>, <a
+                href="">2048</a>, <a href="">Penalty Shooters 2</a> and <a href="">Bad Ice-Cream</a> to play for free.
+            In total we offer more than 1000 game titles.
+        </p><br>
+        <h2>START PLAYING</h2>
+        <p>
+            Unsure what game to play? Start your game discovery on our homepage or pick a game from any of these popular
+            categories:
+        </p>
+        <ul>
+            <li><a href="">Thinking Games</a></li>
+            <li><a href="">.io Games</a></li>
+            <li><a href="">2 Player Games</a></li>
+            <li><a href="">Racing Games</a></li>
+            <li><a href="">Action Games</a></li>
+            <li><a href="">Puzzle Games</a></li>
+        </ul><br>
+        <h2>What is Game Arena?</h2>
+        <p>
+            Game Arena is based in Amsterdam and has a team of 30 people working on our gaming platform. Our goal is to
+            create
+            the ultimate online playground. Free and open to all. Read more about the platform we are building on our
+            company page. If you are a game developer looking to achieve success for your game on web, discover what we
+            offer
+            and
+            get in touch via Game Arena for Developers.
+        </p>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div id="popup">
+                <div class="developer" style="width: 160px;">
+                    <img src="nagesh.jpg" style="width: 77%; margin-left: 15px;"
+                        class="image">
+                    <div class="overlay">
+                        <div class="text">
+                            Nagesh Patel
+                        </div>
+                    </div>
+                    <div class="ppup">
+                        learn more
+                        <div class="ppupdev">
+                            Nagesh Patel has<br> 10 Years Experience<br> in The Field of<br> Game Development.<br>Nagesh
+                            Patel is<br> Leading The Team<br> of Game Website.<p>Team Leader</p>
+                            <div class="contactimg">
+                                <a href=""><img src="/Image/youtube.png"></a><a href=""><img
+                                        src="/Image/insta.jpg"></a><a href=""><img src="/Image/facebook.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="popup">
+                <div class="developer">
+                    <img src="https://www.shootproof.com/blog/wp-content/uploads/2025/07/1-1-ratio_Morgan-Caddell-2191-scaled.jpg"
+                        class="image">
+                    <div class="overlay" style="width: 160px;">
+                        <div class="text">
+                            Prathit Patel
+                        </div>
+                    </div>
+                    <div class="ppup">
+                        learn more
+                        <div class="ppupdev">
+                            Prathit Patel is<br> also Game Developer.<br> He is 7 Years Experienced<br> of Game
+                            Developing Field.<p>Game Developer</p>
+                            <div class="contactimg">
+                                <a href=""><img src="/Image/youtube.png"></a><a href=""><img
+                                        src="/Image/insta.jpg"></a><a href=""><img src="/Image/facebook.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="popup">
+                <div class="developer">
+                    <img src="https://www.shootproof.com/blog/wp-content/uploads/2025/07/1-1-ratio_Morgan-Caddell-2191-scaled.jpg"
+                        class="image">
+                    <div class="overlay">
+                        <div class="text">
+                            Jilu Patel
+                        </div>
+                    </div>
+                    <div class="ppup">
+                        learn more
+                        <div class="ppupdev">
+                            Jilu Patel is<br> Master in Game Designing. She Got 5 Years Experience<br> in Designing. <p>
+                                Game Designer</p>
+                            <div class="contactimg">
+                                <a href=""><img src="/Image/youtube.png"></a><a href=""><img
+                                        src="/Image/insta.jpg"></a><a href=""><img src="/Image/facebook.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="popup">
+                <div class="developer">
+                    <img src="https://www.shootproof.com/blog/wp-content/uploads/2025/07/1-1-ratio_Morgan-Caddell-2191-scaled.jpg"
+                        class="image">
+                    <div class="overlay">
+                        <div class="text">
+                            Krina Patel
+                        </div>
+                    </div>
+                    <div class="ppup">
+                        learn more
+                        <div class="ppupdev">
+                            Krina Patel is Backend<br> Developer with Skills<br> of C++, C#, JAVA etc.<br> Krina Patel
+                            has<br> 6 Years Experience of<br> backend development. <p>Backend Developer</p>
+                            <div class="contactimg">
+                                <a href=""><img src="/Image/youtube.png"></a><a href=""><img
+                                        src="/Image/insta.jpg"></a><a href=""><img src="/Image/facebook.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="popup">
+                <div class="developer">
+                    <img src="https://www.shootproof.com/blog/wp-content/uploads/2025/07/1-1-ratio_Morgan-Caddell-2191-scaled.jpg"
+                        class="image">
+                    <div class="overlay">
+                        <div class="text">
+                            Rushil Pandya
+                        </div>
+                    </div>
+                    <div class="ppup">
+                        learn more
+                        <div class="ppupdev">
+                            Rushil Pandya is<br> Security Engineer with<br> Experience of 5 Years. <p>Security Engineer
+                            </p>
+                            <div class="contactimg">
+                                <a href=""><img src="/Image/youtube.png"></a><a href=""><img
+                                        src="/Image/insta.jpg"></a><a href=""><img src="/Image/facebook.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <hr><br>
+        <div class="foot"><img src="/Image/youtube.png">
+            <span>
+                <b>Let The World Play</b>
+            </span>
+        </div>
+        <a href="">terms of use</a>
+        <a href="">help</a>
+        <a href="">contact</a>
+        <a href="">privacy statement</a>
+        <br><br>
+        <img src="" alt="india flag">
+    </footer>
+</body>
+
+</html>
